@@ -1,35 +1,22 @@
 {
   "name": "sportsbetting-qa",
-  "version": "1.0.0",
-  "description": "",
-  "main": "report-generator.js",
-  "directories": {
-    "test": "tests"
-  },
+  "version": "2.0.0",
+  "description": "Repository for Sports Betting automation using TestCafe",
+  "main": "index.js",
   "scripts": {
-    "testcafe:chrome": "testcafe chrome tests/home/homepage.spect.ts -e",
-    "testcafe:reporter": "testcafe chrome sportsbetting-qa/tests/home/homepage.spect.ts -e --reporter cucumber-json --reporter-json-folder=sportsbetting-qa/Reports/jsonResults",
-    "testcafe:jsontohtmlreport": "node sportsbetting-qa/report-generator.js",
-    "testcafe:htmlreport": "testcafe chrome sportsbetting-qa/tests/home/homepage.spect.ts -e --reporter html:sportsbetting-qa/Reports/htmlReport/firstReport.html"
+      "testcafe:chrome": "testcafe chrome tests/home/homepage.spect.ts -e",
+      "testcafe:reporter": "testcafe chrome sportsbetting-qa/tests/home/homepage.spect.ts -e --reporter cucumber-json --reporter-json-folder=sportsbetting-qa/Reports/jsonResults",
+      "testcafe:jsontohtmlreport": "node sportsbetting-qa/report-generator.js",
+      "testcafe:htmlreport": "testcafe chrome sportsbetting-qa/tests/home/homepage.spect.ts -e --reporter html:sportsbetting-qa/Reports/htmlReport/firstReport.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marcelofi/tescafe-cucumber.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Websites Avengers",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/marcelofi/tescafe-cucumber/issues"
-  },
-  "homepage": "https://github.com/marcelofi/tescafe-cucumber#readme",
-  "dependencies": {
-    "testcafe": "^1.19.0",
-    "testcafe-browser-provider-browserstack": "^1.14.0",
-    "testcafe-reporter-cucumber-json": "^6.3.0",
-    "testcafe-reporter-html": "^1.4.6"
-  },
   "devDependencies": {
-    "typescript": "^4.7.4"
+      "prettier": "^2.6.2",
+      "testcafe": "^1.19.0",
+      "testcafe-browser-provider-browserstack": "^1.14.0",
+      "testcafe-reporter-cucumber-json": "^6.3.0",
+      "testcafe-reporter-html": "^1.4.6",
+      "typescript": "^4.7.4"
   }
 }
