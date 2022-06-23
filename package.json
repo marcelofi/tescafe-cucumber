@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/marcelofi/tescafe-cucumber#readme",
   "dependencies": {
+    "cucumber": "^7.0.0-rc.0",
     "testcafe": "^1.19.0",
     "testcafe-browser-provider-browserstack": "^1.14.0",
     "testcafe-reporter-cucumber-json": "^6.3.0",
