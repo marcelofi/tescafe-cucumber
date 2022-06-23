@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
       "testcafe:chrome": "testcafe chrome tests/home/homepage.spect.ts -e",
+      "testcafe:browserstack": "testcafe 'browserstack:iPhone 8@11' tests/home/homepage.spect.ts -e",
       "testcafe:reporter": "testcafe chrome sportsbetting-qa/tests/home/homepage.spect.ts -e --reporter cucumber-json --reporter-json-folder=sportsbetting-qa/Reports/jsonResults",
       "testcafe:jsontohtmlreport": "node sportsbetting-qa/report-generator.js",
       "testcafe:htmlreport": "testcafe chrome sportsbetting-qa/tests/home/homepage.spect.ts -e --reporter html:sportsbetting-qa/Reports/htmlReport/firstReport.html"
